@@ -1,0 +1,13 @@
+
+body{
+    background-color: rgb(184, 198, 202);
+    padding: 3%;
+    font-size: larger;
+}
+.button{
+    width: 50%;
+    background-color: rgb(81, 172, 81);
+}
+.labelf{
+    width: 50%;
+}
