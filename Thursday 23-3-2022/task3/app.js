@@ -7,11 +7,11 @@ function pic() {
 
 if (m=="red flower"){
 
-    document.getElementById("image") scr="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjC9fBpbUqZZ2wV_gl1-62Lgt7cWDzEMKyLA&usqp=CAU" ;
+    document.getElementById("image") .scr="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjC9fBpbUqZZ2wV_gl1-62Lgt7cWDzEMKyLA&usqp=CAU" ;
 }
 
 else if (m == "whit flower") {
-    document.getElementById("image")scr="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-dp8F3xaczKS6YkSxUuVYj8rlDTUfnKPyfA&usqp=CAU";
+    document.getElementById("image").scr="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-dp8F3xaczKS6YkSxUuVYj8rlDTUfnKPyfA&usqp=CAU";
 
 }
 

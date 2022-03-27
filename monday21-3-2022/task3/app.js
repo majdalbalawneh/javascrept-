@@ -3,27 +3,27 @@
 
 let students = [['David', 80], ['Vinoth', 77], ['Divya', 88], ['Ishitha', 95], ['Thomas', 68]];
 
-let Avgmarks = 0;
+let Avm = 0;
 
 for (let a=0; a < students.length; a++) {
-        Avgmarks += students[a][1];
-        let avg = (Avgmarks/students.length);
+        Avm += students[a][1];
+        let Avg = (Avm/students.length);
 }
 
-console.log("Average grade: " + (Avgmarks)/students.length);
+console.log ("Average grade: " + (Avm)/students.length);
 
-        if ( avg < 60)
+        if ( Avm < 60)
         {
           console.log("Grade : F");      
           } 
-        else if (avg < 70) {
+        else if (Avm < 70) {
                 console.log("Grade : D"); 
                   } 
-        else if (avg < 80) 
+        else if (Avm  < 80) 
              {
                 console.log("Grade : C"); 
-        } else if (avg < 90) {
+        } else if (Avm  < 90) {
                 console.log("Grade : B"); 
-        } else if (avg < 100) {
+        } else if (Avm  < 100) {
                 console.log("Grade : A"); 
 }
