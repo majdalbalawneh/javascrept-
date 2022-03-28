@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+ body {
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBu1KsQBrKsjIZZMMCABGB3YfrV7aJIlMuJECU1K1V4qubX48OvUJbpiW7ScUKKVAQGUs&usqp=CAU);
+      
+        background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: 700;
+    }
+    
+
+
+table{
+ 
+width: 30vw;
+position: absolute;
+top: 8%;
+right:40%;
+}
+td{
+    border: 2px solid rgb(14, 150, 160);
+    font-size: x-large;
+}
+.divForm{
+    margin: 5%;
+    font-size: x-large;
+    
+}
+/* .fieldset{
+    height: 90%;
+    width: 90%;
+} */
+
+</style>
+</head>
+<body>
+    <section class="contaner">
+
+        <div class="divForm">
+            <form action="" id="mobForm">
+              <!-- <fieldset class="fieldset"> -->
+                <legend>Mobile Form </legend>
+              <label for="" id="userName">Name</label>
+              <br><input type="text" name="useName">
+              <br><br>
+              <label for="" id="devisType">Type</label>
+              <br>
+              <select name="typeNameD" id="typeName">
+                <option value="samsung">samsung</option>
+                <option value="apple">apple</option>
+                <option value="Huawi">Huawi</option>
+         </select>
+         <br><br>
+         <button type="submit">add device</button> 
+         
+          </form>
+        </div>
+        <div class="divTable">
+          <table id="tableCon">
+            <thead id="headTa"></thead>
+            <tr>
+                <td>Name</td>
+                <td>Type</td>
+                <td>Price</td>
+                <td>condition</td>
+            </tr>
+            <tbody id="boadTa"></tbody>
+            <tfoot id="footTa"></tfoot>
+          </table>
+  
+        </div>
+    </section>
+      
+<script src="./app.js"></script>
+</body>
+<!-- </fieldset> -->
+</html>
