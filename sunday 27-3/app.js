@@ -19,6 +19,7 @@ function pricephone(min,max){
     return Math.ceil(Math.random() * (max - min) + min);
 }
 
+
 function conditon() {
     let pricephone=phone.price;
     if (pricephone <= 50) {
@@ -46,13 +47,15 @@ formDiv.addEventListener("submit",handleSubmit);
  }
  handleSubmit();
  function renderType() {
-    let trElement = document.createElement("tr");
-    let tdElement4 = document.createElement("td");
-    let tdElement1 = document.createElement("td");
-    let tdElement2 = document.createElement("td");
-    let tdElement3 = document.createElement("td");
+    boadTa.textContent="";
   
     for (let a = 0; a < userinfo.length; a++) {
+        let trElement = document.createElement("tr");
+        let tdElement4 = document.createElement("td");
+        let tdElement1 = document.createElement("td");
+        let tdElement2 = document.createElement("td");
+        let tdElement3 = document.createElement("td");
+
       tbElement.appendChild(trElement);
       trElement.appendChild(tdElement4);
       trElement.appendChild(tdElement1);
