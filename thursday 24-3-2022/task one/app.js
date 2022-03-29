@@ -1,7 +1,7 @@
 "use strict";
 
 ///////////////////////////////task1/////////////////////////////////////////
-
+console.log("task1");
 
 function user(firstName,lastName,age,dob,favoritefood, favoritemovie) {
     this.firstName=firstName;
@@ -18,7 +18,7 @@ console.log(user1);
 
 
 /////////////////////////////////task2/////////////////////////////////////////
-
+console.log("task2");
 
 //   2
 //   Using the varabile persons
@@ -59,6 +59,7 @@ and return the average age of those persons
 
 Ex: averageAge(persons) => 41.2
 */
+console.log("task3");
 
 
 function averageAge(arr) {
@@ -93,6 +94,8 @@ console.log(averageAge(persons));
 // }
 // console.log(olderPerson(persons));
 
+console.log("task4");
+
 function olderPerson(x) {
     let older=0;
     let a;
@@ -112,7 +115,7 @@ console.log(olderPerson(persons));
 
 /////////////////////////////////////////////////////////////////////////////////////////////
 /*
-5
+5console.log("task5");
 Using the varabile persons
 Create a function called longestName
 that accept an object
@@ -161,6 +164,7 @@ Ex: repeatWord("My name is alex mercer class name B baba mama hello Hello HELLO"
   hello:3
 }
 */
+console.log("task7");
 
 
 
@@ -196,7 +200,7 @@ and return an object that represents how many times each char repeat
 
 Ex: repeatChar("mamababatetacedo")
 => { m:2,  a:5, b:2, t2:, e:2, c:1, d:1, o:1}
-*/
+*/console.log("task8");
 
 // let stt = "My name is alex mercer class name B baba mama hello Hello HELLO",
 
@@ -215,6 +219,8 @@ Ex: repeatChar("mamababatetacedo")
 
 /*
 9
+
+
 Create a function called selectFromObject
 that accept an object and an array
 and return an object have the key that inside the array
@@ -222,6 +228,7 @@ and return an object have the key that inside the array
 Ex: selectFromObject({a: 1, cat: 3}, ['a', 'cat', 'd'])
 =>  {a: 1, cat: 3}
 */
+console.log("task9");
 
 
 /*
@@ -233,6 +240,7 @@ and return an array of the keys and values in this object
 Ex: objectToArray({firstName:"Moh",age:24})
 => ["firstName","Moh","age",24]
 */
+console.log("task10");
 
 
 /*
@@ -244,6 +252,7 @@ and return an object of the keys and values in this object
 Ex: arrayToObject(["firstName","Moh","age",24])
 => {firstName:"Moh",age:24}
 */
+console.log("task11");
 
 
 /*
@@ -256,6 +265,7 @@ and return a new object that have only the values that is a number
 Ex: onlyNumber({firstName:"Moh",age:24,movies:[1,5,"string"]})
 => {age:24}
 */
+console.log("task12");
 
 
 /*
@@ -268,6 +278,7 @@ and return a new object that have only the values that is a string
 Ex: onlyString({firstName:"Moh",age:24,movies:[1,5,"string"]})
 => {firstName:"Moh"}
 */
+console.log("task13");
 
 
 /*
@@ -280,6 +291,7 @@ and return a new object that have only the values that is a array
 Ex: onlyArray({firstName:"Moh",age:24,movies:[1,5,"string"]})
 => {movies:[1,5,"string"]}
 */
+console.log("task14");
 
 
 /*
@@ -292,3 +304,4 @@ Ex: keysArray({firstName:"Moh",age:24,movies:[1,5,"string"]})
 => ['firstName', 'age', 'movies']
 
 */
+console.log("task15");

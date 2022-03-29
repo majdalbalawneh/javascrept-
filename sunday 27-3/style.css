@@ -1,0 +1,27 @@
+
+ body {
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBu1KsQBrKsjIZZMMCABGB3YfrV7aJIlMuJECU1K1V4qubX48OvUJbpiW7ScUKKVAQGUs&usqp=CAU);
+      
+        background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: 700;
+    }
+    
+
+
+table{
+ 
+width: 30vw;
+position: absolute;
+top: 8%;
+right:40%;
+}
+td{
+    border: 2px solid rgb(14, 150, 160);
+    font-size: x-large;
+}
+.divForm{
+    margin: 5%;
+    font-size: x-large;
+    
+}
