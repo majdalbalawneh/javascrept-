@@ -89,24 +89,24 @@ formDiv.addEventListener("submit",handleSubmit);
     // let data = await respone.json()
    
     
-    async function getData(x) {
-        let responce = await fetch(`https://eu1.locationiq.com/v1/search.php?key=pk.03928755c8eb5e28e3663800b378b4c6&q=${x}&format=json`);
-        let data = await responce.json( );
-       console.log(responce);
-        console.log(data[0]);
-        localPara.innerHTML=`City name is :${data[0].display_name.split(",",2)} || Longitude is :${data[0].lon} || latitude is:${data[0].lat}`;
-        document.querySelector(`#icon`).src= data[0].icon;
-    };
+    // async function getData(x) {
+    //     let responce = await fetch(`https://eu1.locationiq.com/v1/search.php?key=pk.03928755c8eb5e28e3663800b378b4c6&q=${x}&format=json`);
+    //     let data = await responce.json( );
+    //    console.log(responce);
+    //     console.log(data[0]);
+    //     localPara.innerHTML=`City name is :${data[0].display_name.split(",",2)} || Longitude is :${data[0].lon} || latitude is:${data[0].lat}`;
+    //     document.querySelector(`#icon`).src= data[0].icon;
+    // };
 
-    let localForm=document.getElementById("locForm");
-    let localPara=document.getElementById("cityResult");
-    let button=document.getElementById("submit2");
+    // let localForm=document.getElementById("locForm");
+    // let localPara=document.getElementById("cityResult");
+    // let button=document.getElementById("submit2");
     
-    localForm.addEventListener("submit", function(event){
-        event.preventDefault( );
-        let x=event.target.locName.value;
-        getData(x);
-      });
+    // localForm.addEventListener("submit", function(event){
+    //     event.preventDefault( );
+    //     let x=event.target.locName.value;
+    //     getData(x);
+    //   });
 //    let createname = document.createElement("span");
 //    pargloc.appendChild(createname)
 //    createname.innerHTML= `Location Name: ${data[0].display_name} <br>
