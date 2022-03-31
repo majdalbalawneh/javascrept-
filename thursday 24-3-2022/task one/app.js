@@ -201,6 +201,19 @@ and return an object that represents how many times each char repeat
 Ex: repeatChar("mamababatetacedo")
 => { m:2,  a:5, b:2, t2:, e:2, c:1, d:1, o:1}
 */console.log("task8");
+  console.log(repeatChar("mamababatetacedo"));
+function repeatChar(str) {
+  var obj={};
+  for(let x = 0, length = str.length; x < length; x++) {
+      var a = str.charAt(x)
+      obj[a] = (isNaN(obj[a]) ? 1 : obj[a] + 1);
+    }
+    return obj;
+  };
+
+
+ 
+
 
 // let stt = "My name is alex mercer class name B baba mama hello Hello HELLO",
 
@@ -226,10 +239,27 @@ that accept an object and an array
 and return an object have the key that inside the array
 
 Ex: selectFromObject({a: 1, cat: 3}, ['a', 'cat', 'd'])
-=>  {a: 1, cat: 3}
+=>  
 */
 console.log("task9");
 
+
+function selectFromObject(x,y){
+  let obj = {};
+      for(let i =0 ; i<y.length ; i++)
+      {
+        
+          if(Object.keys(x)[i]==y[i])
+          {
+              
+              obj[y[i]] = x[y[i]];
+          }
+      }
+  return obj
+  }
+  console.log(selectFromObject({a: 1, cat: 3 }, ['a', 'cat', 'd']));
+ console.log({a: 1, cat: 3});
+  ///////////////////////////
 
 /*
 10
@@ -242,7 +272,21 @@ Ex: objectToArray({firstName:"Moh",age:24})
 */
 console.log("task10");
 
-
+  function objectToArray(obj){
+    let arr=[];
+    let objkeys= Object.keys(obj);
+    let objv=Object.values(obj);
+    let l=objkeys.length;
+    for(let i=0; i<l; i++){
+        arr.push(objkeys[i]);
+        arr.push(objv[i]);
+    }
+    return arr; 
+  }
+  
+  console.log(objectToArray({firstName:"Moh",age:24}));
+  
+  
 /*
 11
 Create a function called arrayToObject
@@ -253,6 +297,20 @@ Ex: arrayToObject(["firstName","Moh","age",24])
 => {firstName:"Moh",age:24}
 */
 console.log("task11");
+
+function objectToArray(obj){
+  let arr=[];
+  let objkeys= Object.keys(obj);
+  let objv=Object.values(obj);
+  let l=objkeys.length;
+  for(let i=0; i<l; i++){
+      arr.push(objkeys[i]);
+      arr.push(objv[i]);
+  }
+  return arr; 
+}
+
+console.log(objectToArray({firstName:"Moh",age:24}));
 
 
 /*
@@ -266,7 +324,15 @@ Ex: onlyNumber({firstName:"Moh",age:24,movies:[1,5,"string"]})
 => {age:24}
 */
 console.log("task12");
-
+function onlyNumber(obj) {
+  let newObj={};
+  for (let i = 0; i < Object.keys(obj).length; i++) {
+    if (typeof(Object.values(obj)[i]) == `number`) {
+      newObj[Object.keys(obj)[i]] = Object.values(obj)[i];
+    }
+  } return newObj;
+}
+console.log(onlyNumber({firstName:"Moh",age:24,movies:[1,5,"string"]}));
 
 /*
 13
@@ -280,6 +346,15 @@ Ex: onlyString({firstName:"Moh",age:24,movies:[1,5,"string"]})
 */
 console.log("task13");
 
+function onlyString(obj) {
+  let newObj={};
+  for (let i = 0; i < Object.keys(obj).length; i++) {
+    if (typeof(Object.values(obj)[i]) == `string`) {    ///////////////
+      newObj[Object.keys(obj)[i]] = Object.values(obj)[i];
+    }
+  } return newObj;
+}
+console.log(onlyString({firstName:"Moh",age:24,movies:[1,5,"string"]}));
 
 /*
 14
@@ -292,6 +367,16 @@ Ex: onlyArray({firstName:"Moh",age:24,movies:[1,5,"string"]})
 => {movies:[1,5,"string"]}
 */
 console.log("task14");
+function onlyArray(obj) {
+  let newObj={};
+  for (let i = 0; i < Object.keys(obj).length; i++) {
+    if (typeof(Object.values(obj)[i]) == `...arr`) {    ///////////////
+      newObj[Object.keys(obj)[i]] = Object.values(obj)[i];
+    }
+  } return newObj;
+}
+console.log(onlyArray({firstName:"Moh",age:24,movies:[1,5,"string"]}));
+
 
 
 /*
@@ -305,3 +390,9 @@ Ex: keysArray({firstName:"Moh",age:24,movies:[1,5,"string"]})
 
 */
 console.log("task15");
+function keysArray(obj){
+  let list=Object.keys(obj);
+  return list;
+}
+
+console.log(keysArray({firstName:"Moh",age:24,movies:[1,5,"string"]}));

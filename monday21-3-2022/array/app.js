@@ -498,8 +498,24 @@ console.log("task18");
 //     }  return shorter;
 //     }
 
-
-
+function shorterInArray1(...str) {
+    let i = 0;
+    while (i < str.length) {
+        var shorter = str.reduce(function (a, b) { return a.length <= b.length ? a : b; });
+        i++;
+    } return shorter;
+}
+console.log((shorterInArray1("alex", "mercer", "madrasa", "rashed2", "emad", "hala")));
+let string= "alex mercer madrasa rashed2 emad hala";
+function repeatChar(string, char){
+    let l= string.length;
+    let sum_1= 0;
+    for(let i=0; i<l; i++){
+        if(string[i]==char){
+            sum_1+=1;
+        }
+    }
+    return sum_1;}
 /*
 19
 Create a function called repeatChar
@@ -513,19 +529,23 @@ Ex: repeatChar(string,"z") => 0
 ** solve it one time using for loop and another using while loop
 **try more cases by your self
 */
-console.log("task19");
-let string= "alex mercer madrasa rashed2 emad hala";
-function repeatChar(string, char){
-    let l= string.length;
-    let sum_1= 0;
-    for(let i=0; i<l; i++){
-        if(string[i]==char){
-            sum_1+=1;
-        }
-    }
-    return sum_1;
-}
 
+console.log("task19");
+
+
+function repeatChar1(string, char){
+    let l2= string.length;
+    let sum_6= 0;
+    let I=0;
+    while(I<l2){
+        if(string[I]==char){
+            sum_6+=1;
+        }
+        I++
+    }
+    return sum_6;
+}
+console.log(repeatChar1(string,"a"));
 
 
 
@@ -545,7 +565,19 @@ Ex: evenIndexOddLength(strings) => ["madrasa"]
 console.log("task20");
 
 
-
+function evenIndexOddLength(array){
+    let l= array.length;
+    let list=[];
+    for(let i=0; i<l; i++){
+        let strl= array[i].length;
+        if ((strl % 2 != 0) && (i % 2 == 0)){
+            list.push(array[i]);
+        }
+    }
+    return list;
+}
+var string1= "alex mercer madrasa rashed2 emad hala"
+console.log(evenIndexOddLength(string1));
 
 
 
@@ -562,7 +594,18 @@ console.log( "task21");
 // ** solve it one time using for loop and another using while loop
 // **try more cases by your self
 // */
+let nums0= [44, 5, 4, 3, 2, 10];
+function powerElementIndex(array){
+    let a=array.length;
+    let list=[];
+    for (let i=0; i<a; i++){
+        let x= Math.pow(array[i], i);
+        list.push(x);
+    }
+    return list;
+}
 
+console.log(powerElementIndex(nums0));
 
 /*
 22
@@ -578,4 +621,16 @@ Ex: evenNumberEvenIndex(nums) => [2,8,34]
 */
 
 console.log("task22");
+let nums1= [5,2,2,1,8,66,55,77,34,9,55,1];
+function evenNumberEvenIndex(array){
+    let l= array.length;
+    let list=[];
+    for(let i=0; i<l; i++){
+        if ((array[i] % 2 == 0) && (i % 2 == 0)){
+            list.push(array[i]);
+        }
+    }
+    return list;
+}
 
+console.log(evenNumberEvenIndex(nums1));
