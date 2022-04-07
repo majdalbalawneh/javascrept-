@@ -23,6 +23,13 @@ Ex: subtract(9); => 9 - 8 - 7 - 6 - 5 - 4 - 3 - 2 - 1 - 0 => -27
 */
 
 
+let n = 2;
+let s=1;
+let a = 0;
+let z = n- s -a;
+console.log(z);
+
+
 /*
 2
 Create a function called factorial
@@ -267,5 +274,4 @@ hi 3 Now Pleas Say Hello To 1 and 2
 hi 4 Now Pleas Say Hello To 1, 2 and 3
 hi 5 Now Pleas Say Hello To 1, 2, 3 and 4
 hi 6 Now Pleas Say Hello To 1, 2, 3, 4 and 5
-hi 7 Now Pleas Say Hello To 1, 2, 3, 4, 5 and 6
-*/
+// hi 7 Now Pleas Say Hello To 1, 2, 3, 4, 5 and 6\\

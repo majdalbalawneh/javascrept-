@@ -335,7 +335,7 @@ Ex: shorterString("air","tr","car","github","by")
 */
 
 	console.log('Task13');
-	console.log('Task13:---------');
+
 	function shorterString(s1,s2,s3,s4,s5){
 	    let s1l= s1.length;
 	    let s2l= s2.length;

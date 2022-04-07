@@ -22,6 +22,23 @@ Ex: subtract(5); => 5 - 4 - 3 - 2 - 1 - 0 => -5
 Ex: subtract(9); => 9 - 8 - 7 - 6 - 5 - 4 - 3 - 2 - 1 - 0 => -27
 */
 
+console.log('Task1');
+function subtract(n){
+    let x= n;
+    i= 1;
+    while(i!=n+1){
+        x= x-(n-i);
+        i++;
+    }
+    return x;
+}
+
+
+console.log(subtract(2));
+console.log(subtract(5));
+console.log(subtract(9));
+
+
 
 /*
 2
@@ -31,6 +48,20 @@ and return the product of all integers up to n starting from 1
 Ex: factorial(2); => 2 * 1 => 2
 Ex: factorial(4); => 4 * 3 * 2 * 1 => 24
 */
+console.log('Task2');
+function factorial(n){
+    i=1;
+    let x =n;
+    while(i<n){
+        x= x* (n-i);
+        i++;
+    }
+    return x;
+}
+
+
+console.log(factorial(2));
+console.log(factorial(4));
 
 
 /*
@@ -44,6 +75,20 @@ Important: the continue condition should be [somthing !== 0]
 Ex: repeatStr("to",2); => "to to"
 Ex: repeatStr("to",4); => "to to to to"
 */
+console.log('Task3');
+function repeatStr(str,numb){
+    let con= str;
+    let i= 1;
+    while(numb-i !== 0){
+    con+= ' '+str;
+    i++;
+    }
+    return con;
+}
+
+
+console.log(repeatStr("to",4));
+console.log(repeatStr("to",6));
 
 
 /*
@@ -53,7 +98,23 @@ that take two parameter
 and will return the sumation from the first number to the second number
 Ex: sum2(4, 5); => 4 + 5 => 9
 Ex: sum2(3, 6); => 3 + 4 + 5 + 6 => 18
-*/
+*/ 
+
+ console.log('Task4');
+	function sum2(num1,num2){
+	    let sum= num1;
+	    let i= num1+1;
+	    while(i != num2+1){
+	        sum+= i;
+	        i++;
+	    }
+	    return sum;
+	}
+	
+
+	console.log(sum2(4, 5));
+	console.log(sum2(3, 6));
+
 
 
 /*
@@ -68,6 +129,23 @@ Ex: repeatStr2("ro","cc"); => "ro ro"
 Ex: repeatStr2("ro","fff"); => "ro ro ro"
 */
 
+console.log('Task5');
+function repeatStr2(string1, string2){
+    let con= string1;
+    let i= 1;
+    let num= string2.length;
+    while(num-i !== 0){
+    con+= ' '+string1;
+    i++;
+    }
+    return con;
+}
+
+
+console.log(repeatStr2("ro","cc"));
+console.log(repeatStr2("ro","fff"));
+
+
 
 /*
 6
@@ -80,6 +158,17 @@ Ex: multiOf(4,10,3); => 4000
 Ex: multiOf(6,3,2); => 54
 Ex: multiOf(6,2,3); => 48
 */
+console.log('Task6');
+function multiOf(n1,n2,n3){
+    return n1*(Math.pow(n2, n3));
+}
+
+
+console.log(multiOf(4,10,3));
+console.log(multiOf(6,3,2));
+console.log(multiOf(6,2,3));
+
+
 
 
 /*
@@ -267,4 +356,5 @@ hi 3 Now Pleas Say Hello To 1 and 2
 hi 4 Now Pleas Say Hello To 1, 2 and 3
 hi 5 Now Pleas Say Hello To 1, 2, 3 and 4
 hi 6 Now Pleas Say Hello To 1, 2, 3, 4 and 5
-// hi 7 Now Pleas Say Hello To 1, 2, 3, 4, 5 and 6\\
+hi 7 Now Pleas Say Hello To 1, 2, 3, 4, 5 and 6
+*/
