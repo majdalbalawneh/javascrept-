@@ -3,7 +3,7 @@ let mobileForm= document.getElementById("mobForm");
 let tableBody=document.getElementById("boadTa");
 let arraymob = [ ];
 
-///////////////////////////////////////////////////////////////////////
+///////////////////////////reloud////////////////////////////////////////////
 
 mobileForm.addEventListener( "submit" , handleSubmit);
 
@@ -15,7 +15,7 @@ function handleSubmit( event ){
 }
 // handleSubmit();
 
-//////////////////////////////////////////////////////////////////////
+////////////////////////condition//////////////////////////////////////////////
 
 function phon ( userName , typeDevice ){
     this.userName = userName ;
@@ -40,7 +40,7 @@ function price(min , max ){
     var x=Math.ceil(Math.random() * (max - min) + min);
     return x;
 }
-///////////////////////////////////////////////////////////////
+//////////////////////price////////////////////////////////////////
 
 function condition (){
     if ( phon.price < 100){
@@ -49,7 +49,7 @@ function condition (){
         return "new Device";
     }
 }
-///////////////////////////////////////////////////////////////
+///////////////////////////tabel////////////////////////////////////
 
 function showData( ){
     tableBody.textContent=" ";
@@ -73,7 +73,7 @@ function showData( ){
         tablecol_4.textContent = arraymob[i].conditionOfMobile;
     }
 }
-////////////////////////////////////////////////////
+//////////////////////local//////////////////////////////
 
 function storeInLocalStorage ( ){
     let stringArray=JSON.stringify(arraymob);
@@ -82,13 +82,9 @@ function storeInLocalStorage ( ){
 
 function callFromLocalStorage(){
     let dataObj=localStorage.getItem("data");
-    // console.log(dataObj,"typeOf dataObj ",typeof dataObj);
-
     let strToObject=JSON.parse(dataObj);
-    // console.log(strToObject,"strToObjectr");
     if(strToObject != null){
         arraymob=strToObject;
-        // renderOrder(); 
     }
     showData( ); 
 }
