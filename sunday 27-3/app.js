@@ -13,7 +13,7 @@ function handleSubmit( event ){
    let typeDevice=event.target.typeNameD.value;
    new phon (userName , typeDevice); 
 }
-// handleSubmit();
+// handleSubmit();//////////////way////////////////////////////////????????????
 
 ////////////////////////condition//////////////////////////////////////////////
 
