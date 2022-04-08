@@ -1,16 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./infdex.html">
-    <title>Document</title>
-    
-</head>
-<body>
    
-        <p id="result"></p>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Quiz-Register</title>
+
+</head>
+
+<body>
+    <nav>
+        <h1 class="h1nav"><span class="spnav">R</span>egistration </h1>
+    </nav>
+
+    <table class="table" cellspacing="10">
+        <form action="../index.html" id="regform">
+            <tr class="row1"></tr>
+            <tr>
+                <td class="label">
+                    <label for="first">First Name:</label>
+                </td>
+                <td class="input">
+                    <input type="text" id="first" class="first">
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <div id="ferr"></div>
+                </td>
+            </tr>
+    
+            <tr class="row2"></tr>
+            <tr>
+                <td class="label">
+                    <label for="last">Last Name:</label>
+                </td>
+                <td class="input">
+                    <input type="text" id="last" class="last">
+                </td>
+                <td>
+                    <div id=""></div>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <div id="lerr"></div>
+                </td>
+            </tr>
+    
+            <tr class="row3"></tr>
+            <tr>
+                <td class="label">
+                    <label for="mail">Email:</label>
+                </td>
+                <td class="input">
+                    <input type="email" id="mail" class="mail">
+                </td>
+                <td>
+                    <div id=""></div>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <div id="merr"></div>
+                </td>
+            </tr>
+    
+            <tr class="row4"></tr>
+            <tr>
+                <td class="label">
+                    <label for="cmail">Confirm Email:</label>
+                </td>
+                <td class="input">
+                    <input type="email" id="cmail" class="cmail">
+                </td>
+                <td>
+                    <div id=""></div>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <div id="cmerr"></div>
+                </td>
+            </tr>
+    
+            <tr class="row5"></tr>
+            <tr>
+                <td class="label">
+                    <label for="date">BirthDate:</label>
+                </td>
+                <td class="input">
+                    <input type="date" id="date" class="date">
+                </td>
+                <td>
+                    <div id=""></div>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <div id="derr"></div>
+                </td>
+            </tr>
+    
+            <tr class="row6"></tr>
+            <tr>
+                <td class="label">
+                    <label for="pass">Passwored:</label>
+                </td>
+                <td class="input">
+                    <input type="password" id="pass" class="pass">
+                </td>
+                <td>
+                    <div id=""></div>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <div id="perr"></div>
+                </td>
+            </tr>
+    
+            <tr class="row7"></tr>
+            <tr>
+                <td class="label">
+                    <label for="cpass">Confirm Passwored:</label>
+                </td>
+                <td class="input">
+                    <input type="password" id="cpass" class="cpass">
+                </td>
+                <td>
+                    <div id=""></div>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <div id="cperr"></div>
+                </td>
+            </tr>
+    
+            <tr class="row8"></tr>
+            <tr>
+                <td class="label">
+                    <label for="pos">Position:</label>
+                </td>
+                <td class="input">
+                    <select class="pos" id="pos">
+                        <option value="HTML">HTML</option>
+                        <option value="CSS">CSS</option>
+                        <option value="JAVASCRIPT">JAVASCRIPT</option>
+                    </select>
+                </td>
+                <td>
+                    <!-- <div id=""></div> -->
+                </td>
+            </tr>
+
+            <tr>
+                <!-- <div style="text-align: center;"> -->
+                    <td colspan="2">
+                        <input type="submit" value="Register" class="btn" id="submit" >
+                    </td>
+                <!-- </div> -->
+            </tr>
+        </form>
+
+
+    </table>
+
 </body>
-<script src="app2.js"></script>
+<SCript src="app.js"></SCript>
+
 </html>
