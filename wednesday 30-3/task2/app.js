@@ -22,7 +22,7 @@ let cpass;
 let position = document.getElementById("pos").value;
 localStorage.data;
 if (localStorage.data != undefined) {
-    callfromlocalstorage();
+    // callfromlocalstorage();
 }
 
 function register_constructor(first, last, email, bdate, pass, position, cem) {//constructor
@@ -266,9 +266,4 @@ function storeInlocalStorage() {
 }
 
 
-function callfromlocalstorage() {
-    for (let i = 0; i < JSON.parse(localStorage.getItem("data")).length; i++) {
-        callarr.push(JSON.parse(localStorage.getItem("data"))[i]);
-    }
-}
 
