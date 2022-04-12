@@ -16,18 +16,28 @@
 // callfromlocalstorage();
 
 'use strict';
-let result=document.getElementById('text');
 
+let result=document.getElementById('result');
 function GetDataFromLocalStorage(){
-    let storageData=localStorage.getItem('storeInlocalStorage');
+    let storageData=localStorage.getItem('data');
     let parseData=JSON.parse(storageData);
     console.log(parseData);
     renderInformation(parseData)
+
 }
 GetDataFromLocalStorage()
 
 function renderInformation(parseData){
+    console.log(parseData[0].first);
     parseData.map(function(i){
-    result.innerHTML= `Hello! This is ${i.first}, I was born on ${i.bdate} and my email is: ${i.email}`;
-    })
+    // result.innerHTML= `Hello! This is ${i.first}, I was born on ${i.bdate} and my email is: ${i.email}`;
+    // console.log("hello");
+   let newSpan=document.createElement('span');
+        result.appendChild(newSpan);               /////////appendChild
+        newSpan.innerHTML= `Hello! This is ${i.first}, I was born on ${i.bdate} and my email is: ${i.email}`;
+
 }
+    )}
+
+
+

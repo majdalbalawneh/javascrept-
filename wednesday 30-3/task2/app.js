@@ -38,7 +38,9 @@ function register_constructor(first, last, email, bdate, pass, position, cem) {/
         callarr.push(this);
         storeInlocalStorage();
         location.href = "./index2.html";
+
     }
+
 }
 
 let fname,
@@ -49,7 +51,10 @@ let registerform = document.getElementById("regform");
 registerform.addEventListener("submit", function (event) {
     event.preventDefault();
 
-    fname = document.getElementById("first").value;
+
+    fname=event.target.fname.value
+    // fname = document.getElementById("first").value;
+
     lname = document.getElementById("last").value;
 
     email = document.getElementById("mail").value;
