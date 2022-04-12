@@ -266,4 +266,10 @@ function storeInlocalStorage() {
 }
 
 
+function callfromlocalstorage() {
+    for (let i = 0; i < JSON.parse(localStorage.getItem("data")).length; i++) {
+        callarr.push(JSON.parse(localStorage.getItem("data"))[i]);
+    }
+}
+
 
